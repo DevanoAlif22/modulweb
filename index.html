@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
   </head>
+  <style>
+    .gambar-tampilan {
+        max-width: 800px;
+    }
+  </style>
   <body>
     <!-- header -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -51,7 +56,8 @@
 
     <div class="wrap ms-3">
       <h4 class="mt-3 mb-3"><b>Membuat bagian header website</b></h4>
-
+       
+      <img src="img/gambar1.png" class="gambar-tampilan mb-3" alt="">
       <div class="mb-5">
         <p>
           1. Untuk memulai membuat website, seperti biasa kita butuh struktur
@@ -74,31 +80,139 @@
               </body>
             </html>
           </textarea>
-          <button>Salin Text</button>
+          <button>Salin Teks</button>
         </div>
       </div>
     </div>
 
       <div class="mb-5 ms-3">
         <p>
-          1. Untuk integrasi dengan bootstrap kita tambahkan 
+          2. Kita buat container atau pembungkus untuk bagian header yang kita kasih class dengan nama halaman1
         </p>
 
         <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
-              <!DOCTYPE html>
-              <html lang="en">
-              <head>
-                  <meta charset="UTF-8">
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>Document</title>
-              </head>
-              <body>
-                  <!-- Isi halaman Anda di sini -->
-              </body>
-              </html>
+          <textarea id="html-code" rows="5" cols="10">
+             <div class="halaman1">
+
+             </div>
           </textarea>
-          <button>Salin Text</button>
+          <button>Salin Teks</button>
+        </div>
+      </div>
+
+      
+      <div class="mb-5 ms-3">
+        <p>
+          3. Kita tambahkan navbar yang bisa kita ambil dari bootstrap lalu kita sesuaikan elemenya dengan header yang ingin kita buat
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="25" cols="10">
+            <nav class="navbar navbar-expand-lg bg-trasnparant">
+                <div class="container-fluid wrap_navbar pt-3">
+                  <a class="navbar-brand" href="#"><h4>DavanoPorto</h4></a>
+                  <button
+                    style="border: none; color: rgba(0, 12, 12, 0)"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="navigation"
+                  >
+                    <span class=""
+                      ><p style="color: white"><i class="fa-solid fa-bars"></i></p
+                    ></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    style="justify-content: end"
+                    id="navbarNavAltMarkup"
+                  >
+                    <div class="navbar-nav" id="aboutme">
+                      <a class="nav-link" href="#aboutme">About Me</a>
+                      <a class="nav-link" href="#biodata">Biodata</a>
+                      <a class="nav-link" href="#gallery">Gallery</a>
+                      <a class="nav-link" href="#video">Video</a>
+                      <a class="nav-link" href="#upload">View pdf</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!-- end navbar -->
+          </textarea>
+          <button>Salin Teks</button>
+        </div>
+      </div>
+
+      <div class="mb-5 ms-3">
+        <p>
+          4. Kita buat lagi container di dalam halaman1 yang berisi satu baris dan dua kolom
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="15" cols="10">
+            <div class="container">
+
+                <div class="row wrap_section">
+                  <div class="col-lg-6 section">
+                    
+                  </div>
+                  <div class="col-lg-6">
+                    
+                  </div>
+                </div>
+        
+              </div>
+          </textarea>
+          <button>Salin Teks</button>
+        </div>
+      </div>
+
+      <div class="mb-5 ms-3">
+        <p>
+          5. Untuk kolom pertama kita bisa tambahkan nama, passion, tombol hubungi dan sosial media
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="25" cols="10">
+            <div class="name">
+                <h1>Hi,I'm Davano Alif R</h1>
+              </div>
+              <div class="asal">
+                <h3>Front End Developer</h3>
+              </div>
+              <div class="des">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+                  dolores in! Quibusdam, necessitatibus possimus odio eaque
+                  dolorum odit laudantium dolores. Lorem ipsum dolor, sit
+                </p>
+              </div>
+              <div class="wrap_btn">
+                <div class="tombol">
+                  <a href="https://wa.me/089616915841?texthai">Hubungi Saya</a>
+                </div>
+              </div>
+              <div class="wrap_btn_link">
+                <div class="btn_link_1">
+                  <a href="https://www.instagram.com/davano17/?hl=en"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="btn_link_2">
+                  <a
+                    href="https://www.youtube.com/channel/UC-Qx63eA1jR-gUGICDHzk0A"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+                <div class="btn_link_3">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+              </div>
+          </textarea>
+          <button>Salin Teks</button>
         </div>
       </div>
     </div>
