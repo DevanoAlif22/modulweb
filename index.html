@@ -52,7 +52,7 @@
     <div class="wrap ms-3">
       <h4 class="mt-3 mb-3"><b>Membuat bagian header website</b></h4>
 
-      <img src="img/gambar1.png" class="gambar-tampilan mb-3" alt="" />
+      <img src="img/gambar1.png" class="gambar-tampilan mb-3 w-75" alt="" />
       <div class="mb-5">
         <p>
           1. Untuk memulai membuat website, seperti biasa kita butuh struktur
@@ -61,7 +61,7 @@
         </p>
 
         <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
+          <textarea id="html-code-1" rows="12" cols="80">
             <!doctype html>
             <html lang="en">
               <head>
@@ -76,7 +76,7 @@
               </body>
             </html>
           </textarea>
-          <button>Salin Teks</button>
+          <button onclick="copyText('1')">Salin Teks</button>
         </div>
       </div>
     </div>
@@ -88,13 +88,13 @@
       </p>
 
       <div class="d-flex flex-column" style="max-width: 700px">
-        <textarea id="html-code" rows="5" cols="10">
+        <textarea id="html-code-2" rows="5" cols="10">
              <div class="halaman1">
 
              </div>
           </textarea
         >
-        <button>Salin Teks</button>
+        <button onclick="copyText('2')">Salin Teks</button>
       </div>
     </div>
 
@@ -105,7 +105,7 @@
       </p>
 
       <div class="d-flex flex-column" style="max-width: 700px">
-        <textarea id="html-code" rows="25" cols="10">
+        <textarea id="html-code-3" rows="25" cols="10">
             <nav class="navbar navbar-expand-lg bg-trasnparant">
                 <div class="container-fluid wrap_navbar pt-3">
                   <a class="navbar-brand" href="#"><h4>DavanoPorto</h4></a>
@@ -141,7 +141,7 @@
               <!-- end navbar -->
           </textarea
         >
-        <button>Salin Teks</button>
+        <button onclick="copyText('3')">Salin Teks</button>
       </div>
     </div>
 
@@ -152,7 +152,7 @@
       </p>
 
       <div class="d-flex flex-column" style="max-width: 700px">
-        <textarea id="html-code" rows="15" cols="10">
+        <textarea id="html-code-4" rows="15" cols="10">
             <div class="container">
 
                 <div class="row wrap_section">
@@ -167,7 +167,7 @@
               </div>
           </textarea
         >
-        <button>Salin Teks</button>
+        <button onclick="copyText('4')">Salin Teks</button>
       </div>
     </div>
 
@@ -178,7 +178,7 @@
       </p>
 
       <div class="d-flex flex-column" style="max-width: 700px">
-        <textarea id="html-code" rows="25" cols="10">
+        <textarea id="html-code-5" rows="25" cols="10">
             <div class="name">
                 <h1>Hi,I'm Davano Alif R</h1>
               </div>
@@ -215,7 +215,7 @@
               </div>
           </textarea
         >
-        <button>Salin Teks</button>
+        <button onclick="copyText('5')">Salin Teks</button>
       </div>
     </div>
 
@@ -226,11 +226,11 @@
       </p>
 
       <div class="d-flex flex-column" style="max-width: 700px">
-        <textarea id="html-code" rows="3" cols="10">
+        <textarea id="html-code-6" rows="3" cols="10">
             <img src="./assets/aku4.png" class="img-fluid" alt="" />
           </textarea
         >
-        <button>Salin Teks</button>
+        <button onclick="copyText('6')">Salin Teks</button>
       </div>
     </div>
 
@@ -239,5 +239,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script/clipboard.js"></script>
   </body>
 </html>
