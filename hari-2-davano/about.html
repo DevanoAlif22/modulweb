@@ -14,7 +14,7 @@
   <body>
     <!-- header -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">MODUL WEB 2</a>
         <button
           class="navbar-toggler"
@@ -49,116 +49,204 @@
       </div>
     </nav>
 
-    <div class="wrap ms-3">
-      <h4 class="mt-3 mb-3"><b>Membuat Biodata</b></h4>
-      <img src="./img/gambar2.png" style="width: 800px;" alt="">
+  <div class="container mt-5">
+  <h4 class="mb-4">Membuat About</h4>
+  <img src="./img/about.png" class="img-fluid" alt="Gallery Image" style="max-width: 100%;">
 
-      <div class="mb-5">
-        <p>
-          1. setelah membuat header kita lanjut buat Container atau pembungkusnya Dulu buat judul dan isi biodatanya
-        </p>
+  <div class="mt-4">
+    <h5>1. Setelah membuat about kita lanjut membuat biodata pertama-tama kita buat container buat judul dan isi dari biodatanya </h5>
 
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="5" cols="80">
-            <div class="halaman2">
-              <div class="container">
-             
-              </div>
-            </div>
-          </textarea>
-          <button>Salin Texs</button>
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="tentang">
+          <div class="container">
+           
+          </div>
         </div>
-      </div>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
     </div>
+  </div>
+  <div class="mt-4">
+    <h5>ini style css dari container di atas</h5>
 
-      <div class="mb-5 ms-3">
-        <p>
-          2. lalu Kita tambahkan baris dan kolom buat membungkus judul dan deskripsinya
-        </p>
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        .tentang{
+          background-color: #0f172a;
+          width: 100%;
+          height: auto;
+          padding-bottom: 2rem;
+        }
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan deskripsinya</h5>
 
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
-            
-            <div class="row">
-              <div class="col-12 text-center">
-                <div class="judul_halaman2">
-                  <h3 id="biodata">Biodata</h3>
-                </div>
-                <div class="des_halaman2_kiri">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Possimus <br />
-                    impedit incidunt eius, dolor ea veritatis!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </textarea>
-          <button>Salin Texs</button>
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="row">
+          <div class="col-12 text-center">
+       
+          </div>
         </div>
-      </div>
-      <div class="mb-5 ms-3">
-        <p>
-          3. lalu Kita tambahkan Isi dari Biodata tersebut 
-        </p>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>3. Lanjut kita buat judul dan deskripsinya</h5>
 
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
-            
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="gambar_halaman2">
-                  <img src="./assets/aku4.png" class="img-fluid" alt="" />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="subjudul_halaman2">
-                  <h4>My Bio</h4>
-                </div>
-                <div class="des_halaman2_kanan">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus, aliquid praesentium consectetur sequi, molestias
-                    quibusdam fugiat ea repudiandae eveniet, voluptatibus dolorum!
-                    Non animi quo velit?
-                  </p>
-                </div>
-                <div class="wrap_tabel">
-                  <div class="tabel1">
-                    <div class="tabel_name">
-                      <h5>Name</h5>
-                      <p>Davano Alif R</p>
-                    </div>
-                    <div class="tabel_email">
-                      <h5>Email</h5>
-                      <p>Davano@gmail.com</p>
-                    </div>
-                    <div class="tabel_phone">
-                      <h5>Nomor</h5>
-                      <p>089-616-915-841</p>
-                    </div>
-                  </div>
-                  <div class="tabel2">
-                    <div class="tabel_status">
-                      <h5>Status</h5>
-                      <p>Mahasiswa</p>
-                    </div>
-                    <div class="tabel_jeniskelamin">
-                      <h5>Jenis kelamin</h5>
-                      <p>Laki - Laki</p>
-                    </div>
-                    <div class="tabel_umur">
-                      <h5>Umur</h5>
-                      <p>19 Tahun</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </textarea>
-          <button>Salin Texs</button>
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="judul">
+          <h3 id="biodata">Biodata</h3>
         </div>
-      </div>
+        <div class="judul-deskripsi">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Possimus <br />
+            impedit incidunt eius, dolor ea veritatis!
+          </p>
+        </div>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>Ini style css dari membuat judul dan deskripsinya</h5>
+
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        .judul h3{
+          color: #00a2f7;
+          font-weight: 500;
+        }
+        .judul-deskripsi p{
+          color: white;
+          font-size: 13px;
+          padding-bottom: 5rem;
+        }
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>4. Langkah selanjutnya kita buat 1 baris yang barisnya mempunyai 2 kolom, kolom pertama berisi gambar kolom kedua berisi isi biodata </h5>
+
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="row">
+          <div class="col-lg-6">
+            
+          </div>
+          <div class="col-lg-6">
+           
+          </div>
+        </div>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>5. Langkah selanjutnya kita buat isi dari kolom pertama yaitu berisi gambar, kita copy dan dimasukkan ke kolom pertama </h5>
+
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        
+        <div>
+          <img src="./assets/aku4.png" class="img-fluid" alt="" />
+        </div>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>6. lanjut kita buat isi di kolom kedua yang berisi biodata kita, copy dan salin ke kolom kedua </h5>
+
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div>
+          <h4 style="color: white; padding-bottom: 1.5rem">My Bio</h4>
+        </div>
+        <div>
+          <p style="color: white; padding-bottom: 1rem; font-weight: 300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, aliquid praesentium consectetur sequi, molestias
+            quibusdam fugiat ea repudiandae eveniet, voluptatibus dolorum!
+            Non animi quo velit?
+          </p>
+        </div>
+        <div class="pembungkus-tabel">
+          <div class="tabel">
+            <div>
+              <h5>Name</h5>
+              <p>Davano Alif R</p>
+            </div>
+            <div>
+              <h5>Email</h5>
+              <p>Davano@gmail.com</p>
+            </div>
+            <div>
+              <h5>Nomor</h5>
+              <p>089-616-915-841</p>
+            </div>
+          </div>
+          <div class="tabel">
+            <div>
+              <h5>Status</h5>
+              <p>Mahasiswa</p>
+            </div>
+            <div>
+              <h5>Jenis kelamin</h5>
+              <p>Laki - Laki</p>
+            </div>
+            <div>
+              <h5>Umur</h5>
+              <p>19 Tahun</p>
+            </div>
+          </div>
+        </div>
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+  <div class="mt-4">
+    <h5>Ini style css dari isi kolom kedua </h5>
+
+    <div class="d-flex flex-column">
+      <textarea id="html-code" rows="12" class="form-control" readonly>
+        .pembungkus-tabel{
+          display: flex;
+          align-items: center;
+          padding: 2rem ;
+          border: 1px solid #00a2f7;
+          justify-content: space-around;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          transition: .2s ease-in-out;
+          cursor: pointer;
+        }
+        .pembungkus-tabel:hover{
+          background-color: #0c2f4b;
+          transform: scale(1.1);
+        }
+        /* tabel 1 */
+        .tabel h5{
+          color: white;
+        }
+        .tabel p{
+          color: #6584c9;
+        }
+      </textarea>
+      <button class="btn btn-primary mt-3">Salin Text</button>
+    </div>
+  </div>
+</div>
+
+
     </div>
 
 
