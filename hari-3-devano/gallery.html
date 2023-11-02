@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MODUL WEB 2</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Header</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap ms-3">
+      <h4 class="mt-3 mb-3"><b>Membuat Gallery</b></h4>
+      <img src="./img/gambar2.png" style="width: 800px;" alt="">
+
+      <div class="mb-5">
+        <p>
+          1. Pertama kita buat Container atau pembungkusnya Dulu
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="12" cols="80">
+            <!doctype html>
+            <html lang="en">
+              <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Bootstrap demo</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+              </head>
+              <body>
+                <div class="halaman2">
+                  <div class="container">
+                 
+                  </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+              </body>
+            </html>
+          </textarea>
+          <button>Salin Texs</button>
+        </div>
+      </div>
+    </div>
+
+      <div class="mb-5 ms-3">
+        <p>
+          2. lalu Kita tambahkan Judul dan deskripsinya 
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="12" cols="80">
+            
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="judul_halaman2">
+                  <h3 id="biodata">Biodata</h3>
+                </div>
+                <div class="des_halaman2_kiri">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Possimus <br />
+                    impedit incidunt eius, dolor ea veritatis!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </textarea>
+          <button>Salin Texs</button>
+        </div>
+      </div>
+      <div class="mb-5 ms-3">
+        <p>
+          3. lalu Kita tambahkan Isi dari Biodata tersebut 
+        </p>
+
+        <div class="d-flex flex-column" style="max-width: 700px">
+          <textarea id="html-code" rows="12" cols="80">
+            
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="gambar_halaman2">
+                  <img src="./assets/aku4.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="subjudul_halaman2">
+                  <h4>My Bio</h4>
+                </div>
+                <div class="des_halaman2_kanan">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus, aliquid praesentium consectetur sequi, molestias
+                    quibusdam fugiat ea repudiandae eveniet, voluptatibus dolorum!
+                    Non animi quo velit?
+                  </p>
+                </div>
+                <div class="wrap_tabel">
+                  <div class="tabel1">
+                    <div class="tabel_name">
+                      <h5>Name</h5>
+                      <p>Davano Alif R</p>
+                    </div>
+                    <div class="tabel_email">
+                      <h5>Email</h5>
+                      <p>Davano@gmail.com</p>
+                    </div>
+                    <div class="tabel_phone">
+                      <h5>Nomor</h5>
+                      <p>089-616-915-841</p>
+                    </div>
+                  </div>
+                  <div class="tabel2">
+                    <div class="tabel_status">
+                      <h5>Status</h5>
+                      <p>Mahasiswa</p>
+                    </div>
+                    <div class="tabel_jeniskelamin">
+                      <h5>Jenis kelamin</h5>
+                      <p>Laki - Laki</p>
+                    </div>
+                    <div class="tabel_umur">
+                      <h5>Umur</h5>
+                      <p>19 Tahun</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </textarea>
+          <button>Salin Texs</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
