@@ -69,7 +69,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
           <!DOCTYPE html>
           <html lang="en">
             <head>
@@ -99,7 +99,9 @@
           </html>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -110,7 +112,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
             <nav class="navbar navbar-expand-lg bg-light">
               <div class="container">
                 <a class="navbar-brand" href="#"><b>DEVANO</b></a>
@@ -153,7 +155,9 @@
             </nav>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -164,7 +168,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
             <header class="container pb-5 pt-5" id="home">
               <div class="container header">
                 <div class="row d-flex" style="height: 80vh">
@@ -183,7 +187,9 @@
             </header>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -195,7 +201,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
           <h1>HI</h1>
             <h1>
               I'am <b class="change-color" style="color: #3e6ff4">Devano</b>
@@ -230,7 +236,9 @@
             </div>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -242,7 +250,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-5" rows="12" class="form-control" readonly>
           
             * {
               padding: 0px;
@@ -347,7 +355,9 @@
             }
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('5')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -363,7 +373,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-6" rows="12" class="form-control" readonly>
             <img src="img/kotakkotak.png" class="kotak" alt="" />
             <div class="home__img">
               <svg
@@ -392,7 +402,9 @@
             </div>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('6')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -403,7 +415,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-7" rows="12" class="form-control" readonly>
             .home__blob {
               fill: #3e6ff4;
             }
@@ -437,11 +449,14 @@
             
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('7')">
+            Salin Text
+          </button>
         </div>
       </div>
     </div>
 
+    <script src="script/clipboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -70,14 +70,16 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
             <section id="file" class="container mt-4 mb-5">
                 <h3 class="mb-4 center" style="color: #3e6ff4">Upload File PDF</h3>
                 
             </section>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -88,7 +90,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -197,7 +199,9 @@
               </div>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -205,7 +209,7 @@
         <h5 class="pb-2">3. Kita tambahkan sedikit css untuk class pdf</h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
             /* pdf */
             .pdf {
             height: 600px;
@@ -213,11 +217,14 @@
 
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
         </div>
       </div>
     </div>
 
+    <script src="script/clipboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

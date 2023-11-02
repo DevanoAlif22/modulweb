@@ -71,7 +71,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
                   <!-- GALLERY -->
       <section id="gallery" class="container pt-4 pb-5">
 
@@ -109,7 +109,9 @@
       </section>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -120,7 +122,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
             <div class="m-auto">
               <div class="gallery-photo photo-1">
                 <div class="title-photo">
@@ -131,7 +133,9 @@
             </div>
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
         </div>
       </div>
 
@@ -142,7 +146,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
             
             .gallery-photo {
               max-width: 300px;
@@ -199,11 +203,14 @@
 
         </textarea
           >
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
         </div>
       </div>
     </div>
 
+    <script src="script/clipboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
