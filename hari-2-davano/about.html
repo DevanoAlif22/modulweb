@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>About</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,7 +33,7 @@
               <a class="nav-link active" aria-current="page" href="index.html">Header</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="about.html">About</a>
+              <a class="nav-link active" href="about.html"> <b>About</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="gallery.html">Gallery</a>
@@ -60,21 +60,21 @@
     <h5>1. Setelah membuat about kita lanjut membuat biodata pertama-tama kita buat container buat judul dan isi dari biodatanya </h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-1" rows="12" class="form-control" readonly>
         <div class="tentang">
           <div class="container">
            
           </div>
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('1')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>ini style css dari container di atas</h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-2" rows="12" class="form-control" readonly>
         .tentang{
           background-color: #0f172a;
           width: 100%;
@@ -82,28 +82,28 @@
           padding-bottom: 2rem;
         }
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('2')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan deskripsinya</h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-3" rows="12" class="form-control" readonly>
         <div class="row">
           <div class="col-12 text-center">
        
           </div>
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('3')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>3. Lanjut kita buat judul dan deskripsinya</h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-4" rows="12" class="form-control" readonly>
         <div class="judul">
           <h3 id="biodata">Biodata</h3>
         </div>
@@ -115,14 +115,14 @@
           </p>
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('4')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>Ini style css dari membuat judul dan deskripsinya</h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-5" rows="12" class="form-control" readonly>
         .judul h3{
           color: #00a2f7;
           font-weight: 500;
@@ -133,14 +133,14 @@
           padding-bottom: 5rem;
         }
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('5')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>4. Langkah selanjutnya kita buat 1 baris yang barisnya mempunyai 2 kolom, kolom pertama berisi gambar kolom kedua berisi isi biodata </h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-6" rows="12" class="form-control" readonly>
         <div class="row">
           <div class="col-lg-6">
             
@@ -150,27 +150,27 @@
           </div>
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('6')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>5. Langkah selanjutnya kita buat isi dari kolom pertama yaitu berisi gambar, kita copy dan dimasukkan ke kolom pertama </h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-7" rows="12" class="form-control" readonly>
         
         <div>
           <img src="./assets/aku4.png" class="img-fluid" alt="" />
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('7')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>6. lanjut kita buat isi di kolom kedua yang berisi biodata kita, copy dan salin ke kolom kedua </h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-8" rows="12" class="form-control" readonly>
         <div>
           <h4 style="color: white; padding-bottom: 1.5rem">My Bio</h4>
         </div>
@@ -213,14 +213,14 @@
           </div>
         </div>
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('8')">Salin Text</button>
     </div>
   </div>
   <div class="mt-4">
     <h5>Ini style css dari isi kolom kedua </h5>
 
     <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+      <textarea id="html-code-9" rows="12" class="form-control" readonly>
         .pembungkus-tabel{
           display: flex;
           align-items: center;
@@ -244,7 +244,7 @@
           color: #6584c9;
         }
       </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      <button class="btn btn-primary mt-3" onclick="copyText('9')">Salin Text</button>
     </div>
   </div>
 </div>
@@ -253,6 +253,7 @@
     </div>
 
 
+    <script src="script/clipboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

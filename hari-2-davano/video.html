@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Video</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,7 +30,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Header</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Header</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="about.html">About</a>
@@ -39,7 +41,7 @@
               <a class="nav-link active" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="video.html">Video</a>
+              <a class="nav-link active" href="video.html"><b>Video</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="pdf.html">PDF</a>
@@ -52,58 +54,81 @@
       </div>
     </nav>
 
-  <div class="container mt-5">
-  <h4 class="mb-4">Membuat Video</h4>
-  <img src="./img/pdf.png" class="img-fluid" alt="Gallery Image" style="max-width: 100%;">
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Video</h4>
+      <img
+        src="./img/pdf.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
 
-  <div class="mt-4">
-    <h5>1. Setelah membuat Gallery kita lanjut membuat video, pertama-tama kita buat container buat judul dan isi dari Videonya</h5>
+      <div class="mt-4">
+        <h5>
+          1. Setelah membuat Gallery kita lanjut membuat video, pertama-tama
+          kita buat container buat judul dan isi dari Videonya
+        </h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
         <div class="video">
           <div class="container">
            
           </div>
         </div>
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>ini style css dari container di atas</h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>ini style css dari container di atas</h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
         .video{
           width: 100%;
           height: auto;
           padding-bottom: 2rem;
           background-color: #0f172a;
         }
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan deskripsinya</h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          2. langkah ke dua kita buat 1 baris 1 kolom untuk membungkus Judul dan
+          deskripsinya
+        </h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
         <div class="row">
             <div class="col-12 text-center">
             
             </div>
           </div>
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>3. Lanjut kita buat judul dan deskripsinya, kita copy dan dimasukan ke pembungkusnya</h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          3. Lanjut kita buat judul dan deskripsinya, kita copy dan dimasukan ke
+          pembungkusnya
+        </h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
         <div class="judul">
           <h3 id="video">VIdeo</h3>
         </div>
@@ -114,15 +139,18 @@
             impedit incidunt eius, dolor ea veritatis!
           </p>
         </div>
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>Ini style css dari membuat judul dan deskripsinya</h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>Ini style css dari membuat judul dan deskripsinya</h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-5" rows="12" class="form-control" readonly>
         .judul h3{
           color: #00a2f7;
           font-weight: 500;
@@ -132,15 +160,21 @@
           font-size: 13px;
           padding-bottom: 5rem;
         }
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>4. Langkah selanjutnya kita buat 3 baris yang perbarisnya mempunyai 2 kolom </h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('5')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          4. Langkah selanjutnya kita buat 3 baris yang perbarisnya mempunyai 2
+          kolom
+        </h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-6" rows="12" class="form-control" readonly>
         <div class="row">
             <div class="col-lg-6">
               
@@ -166,15 +200,22 @@
               
             </div>
           </div>
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>5. Langkah selanjutnya kita buat isi dari pembungkus tersebut yang nantinya kita masukan ke kolom-kolom yang sudah kita sediakan sebelumnya </h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('6')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>
+          5. Langkah selanjutnya kita buat isi dari pembungkus tersebut yang
+          nantinya kita masukan ke kolom-kolom yang sudah kita sediakan
+          sebelumnya
+        </h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-7" rows="12" class="form-control" readonly>
         <div class="kartu-video">
           <div class="row">
             <div class="col-lg-6">
@@ -198,15 +239,18 @@
             </div>
           </div>
         </div>
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
-    </div>
-  </div>
-  <div class="mt-4">
-    <h5>5. kita buat syle css dari isi di atas </h5>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('7')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5>5. kita buat syle css dari isi di atas</h5>
 
-    <div class="d-flex flex-column">
-      <textarea id="html-code" rows="12" class="form-control" readonly>
+        <div class="d-flex flex-column">
+          <textarea id="html-code-8" rows="12" class="form-control" readonly>
         .kartu-video{
           padding: 1.5rem;
           background: transparent;
@@ -232,16 +276,16 @@
         .tombol-kartu-video a:hover{
           background-color: #00a2f7;
         }
-      </textarea>
-      <button class="btn btn-primary mt-3">Salin Text</button>
+      </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('8')">
+            Salin Text
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-
-    </div>
-
-
+    <script src="script/clipboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

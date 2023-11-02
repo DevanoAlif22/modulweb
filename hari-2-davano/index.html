@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Header</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,7 +31,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
-                >Header</a
+                ><b>Header</b></a
               >
             </li>
             <li class="nav-item">
@@ -69,7 +69,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
            <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -97,7 +97,9 @@
 </html>
 
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -108,27 +110,31 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
           
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
         <h5>
-          2. kita buat dulu container untuk membungkus nav dan isi headernya
+          3. kita buat dulu container untuk membungkus nav dan isi headernya
           nanti
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
           
             <div class="header">
    
             </div>
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -138,7 +144,7 @@
         </h5>
 
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
           
             .header{
               width: 100%;
@@ -148,7 +154,9 @@
              
           }
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -157,7 +165,7 @@
           Elemen navbar dari bootstrap itu sendiri contoh seperti dibawah ini
         </h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-5" rows="12" class="form-control" readonly>
             <nav class="navbar navbar-expand-lg bg-trasnparant">
               <div class="container-fluid wrap_navbar pt-3">
                 <a class="navbar-brand" href="#"><h4>DavanoPorto</h4></a>
@@ -192,7 +200,9 @@
               </div>
             </nav>
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('5')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -201,7 +211,7 @@
           menarik
         </h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-6" rows="12" class="form-control" readonly>
             .navbar-brand h4{
               color: #00a2f7;
             }
@@ -233,7 +243,9 @@
               padding-left: 3rem;
             }
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('6')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -242,7 +254,7 @@
           headernya, kita copy lalu masukan ke container header
         </h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-7" rows="12" class="form-control" readonly>
             <div class="container">
               <div class="row pembungkus">
                 <div class="col-lg-6 section">
@@ -254,13 +266,15 @@
               </div>
             </div>
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('7')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
         <h5>kita kasih style css class pembungkus dan section</h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-8" rows="12" class="form-control" readonly>
             .pembungkus{
               padding-top: 4rem;
               display: flex;
@@ -270,7 +284,9 @@
             padding-bottom: 3rem;
         }
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('8')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -279,7 +295,7 @@
           di atas
         </h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-9" rows="12" class="form-control" readonly>
             <div class="nama">
               <h1>Hi,I'm Davano Alif R</h1>
             </div>
@@ -315,13 +331,15 @@
               </div>
             </div>
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('9')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
         <h5>kita kasih style css isi dari header nya</h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-10" rows="12" class="form-control" readonly>
             .nama h1{
               color: white;
               font-size: 3.2rem;
@@ -376,7 +394,9 @@
         
         
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('10')">
+            Salin Text
+          </button>
         </div>
       </div>
       <div class="mt-4">
@@ -385,12 +405,14 @@
           kedua
         </h5>
         <div class="d-flex flex-column">
-          <textarea id="html-code" rows="12" class="form-control" readonly>
+          <textarea id="html-code-11" rows="12" class="form-control" readonly>
             <img src="./assets/aku4.png" class="img-fluid" alt="" />
         
         
           </textarea>
-          <button class="btn btn-primary mt-3">Salin Text</button>
+          <button class="btn btn-primary mt-3" onclick="copyText('11')">
+            Salin Text
+          </button>
         </div>
       </div>
     </div>
