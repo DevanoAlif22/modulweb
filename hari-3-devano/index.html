@@ -29,7 +29,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </li>
             <li class="nav-item">
               <a class="nav-link active" href="index.html"><b>Header</b></a>
             </li>
@@ -44,6 +43,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="pdf.html">PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
             </li>
           </ul>
         </div>
@@ -62,7 +64,8 @@
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
           1. Pertama kita siapkan file dan struktur HTML, file css, masukkan
-          link css, cdn bootstrap dan cdn font awesome (untuk menambahkan icon) agar bisa ter integrasi
+          link css, cdn bootstrap dan cdn font awesome (untuk menambahkan icon)
+          agar bisa ter integrasi
         </h5>
 
         <div class="d-flex flex-column">
@@ -99,6 +102,7 @@
           <button class="btn btn-primary mt-3">Salin Text</button>
         </div>
       </div>
+
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
           2. Sebelum kita buat section header, kita tambahkan navbar dulu yang
@@ -293,6 +297,15 @@
             }
 
             
+            .down {
+              display: flex;
+              justify-content: center;
+            }
+            
+            .icon-down {
+              animation: moveUpDown 2s ease-in-out infinite;
+            }
+            
             @keyframes changeColor {
               0%,
               100% {
@@ -310,6 +323,26 @@
               }
               to {
                 width: 100%;
+              }
+            }
+
+            @keyframes blink-caret {
+              from,
+              to {
+                border-color: transparent;
+              }
+              50% {
+                border-color: #000;
+              }
+            }
+            
+            @keyframes moveUpDown {
+              0%,
+              100% {
+                transform: translateY(0); /* Elemen berada di posisi awal */
+              }
+              50% {
+                transform: translateY(-20px); /* Elemen bergerak ke atas */
               }
             }
         </textarea
@@ -389,14 +422,19 @@
             .home__img {
               width: 400px;
             }
-            .down {
-              display: flex;
-              justify-content: center;
+
+            @keyframes visible {
+              0% {
+                opacity: 0; /* Mulai dari 0 derajat rotasi */
+              }
+              50% {
+                opacity: 0.5; /* Mulai dari 0 derajat rotasi */
+              }
+              100% {
+                opacity: 0; /* Mulai dari 0 derajat rotasi */
+              }
             }
             
-            .icon-down {
-              animation: moveUpDown 2s ease-in-out infinite;
-            }
         </textarea
           >
           <button class="btn btn-primary mt-3">Salin Text</button>
