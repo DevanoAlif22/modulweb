@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Modul Web 3</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,8 +14,8 @@
   <body>
     <!-- header -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">MODUL WEB 2</a>
+      <div class="container">
+        <a class="navbar-brand" href="#">MODUL WEB 3</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,137 +30,419 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Header</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Header</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link active" href="about.html"> <b>About</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Gallery</a>
+              <a class="nav-link active" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Video</a>
+              <a class="nav-link active" href="video.html">Video</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">PDF</a>
+              <a class="nav-link active" href="pdf.html">PDF</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="wrap ms-3">
-      <h4 class="mt-3 mb-3"><b>Membuat Biodata</b></h4>
-      <img src="./img/gambar2.png" style="width: 800px;" alt="">
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Bagian About</h4>
+      <img
+        src="./img/gambar-2.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
 
-      <div class="mb-5">
-        <p>
-          1. setelah membuat header kita lanjut buat Container atau pembungkusnya Dulu buat judul dan isi biodatanya
-        </p>
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          1. Setelah membuat header kita lanjutkan untuk membuat bagian about
+          atau biodata, tambahkan section dengan class container,about dan
+          tambahkan 1 baris dan 2 kolom
+        </h5>
 
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="5" cols="80">
-            <div class="halaman2">
-              <div class="container">
-             
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+                          <!-- ABOUT -->
+      <section
+      id="about"
+      class="about container pt-4 pb-5"
+      style="margin-bottom: 40px"
+    >
+
+      <h3 class="center" style="color: #3e6ff4">About</h3>
+
+      <div class="row biodata-wrap">
+
+        <div class="col-lg-6 d-flex justify-content-center">
+
+          <div class="row m-auto d-flex justify-content-center">
+            
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 p-sm-3" style="padding-top: 50px">
+          
+        </div>
+        
+      </div>
+         
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          2. di kolom 1 kita tambahkan 3 div dengan class about-img yang
+          nantinya kita isi gambar di dalam css
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+            <div class="col-4 about-img"></div>
+            <div class="col-4 about-img"></div>
+            <div class="col-4 about-img"></div>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          3. Tambahkan style css untuk setiap elemen dan class yang sudah kita
+          tambahkan di kolom 1 seperti about-img,center dan yang lainnya
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+              /* about */
+              .center {
+                width: 100%;
+                text-align: center;
+              }
+              .about p {
+                font-size: 20px;
+              }
+              .about h4 {
+                margin-right: 30px;
+              }
+              .about-img {
+                margin-right: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+                width: 200px;
+                height: 300px;
+                box-shadow: rgba(4, 140, 198, 0.8) 0px 5px 10px;
+                transition: 1s;
+              }
+
+              .about-img:nth-child(1) {
+                background-image: url("img/devano-22-8.JPG");
+                background-position: center;
+                background-size: cover;
+              }
+              .about-img:hover:nth-child(1) {
+                scale: 1.1;
+                rotate: 5deg;
+              }
+              .about-img:nth-child(2) {
+                background-image: url("img/devano-22-5.JPG");
+                background-position: center;
+                background-size: cover;
+              }
+              .about-img:hover:nth-child(2) {
+                scale: 1.1;
+              }
+              .about-img:nth-child(3) {
+                background-image: url("img/devano-22-2.JPG");
+                background-position: center;
+                background-size: cover;
+              }
+              .about-img:hover:nth-child(3) {
+                scale: 1.1;
+                rotate: -5deg;
+              }
+
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          4. Sekarang kita fokus ke kolom ke 2, kita tambahkan slide atau biasa
+          dikenal carousel yang bisa di ambil di bootstrap atau copy berikut.
+          kita buat 2 slide aktif
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+              
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                </div>
+                <div class="carousel-item">
+                  
+                </div>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span aria-hidden="true"
+                  ><i class="fa-solid fa-angle-left fa-2x"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span aria-hidden="true"
+                  ><i class="fa-solid fa-angle-right fa-2x"></i
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </textarea>
-          <button>Salin Texs</button>
+
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          5. Pada slide pertama kita bisa tambahkan elemen seperti h4 dan p
+          untuk biodata kita, tak lupa juga ada class line untuk membuat garis
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+            <h4 class="center mb-4">Biodata</h4>
+                  <div style="margin-bottom: 20px">
+                    <div class="biodata d-flex">
+                      <h4>Nama :</h4>
+                      <p>Devano Alif Ramadhan</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="biodata d-flex">
+                      <h4>Alamat :</h4>
+                      <p>Jl Ke hatimu, Sidoarjo</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="biodata d-flex">
+                      <h4>Mahasiswa :</h4>
+                      <p>Sistem Informasi ITATS</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="biodata d-flex">
+                      <h4>Telepon :</h4>
+                      <p>0895366141915</p>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          6. Pada slide kedua kita buat keahlian kita apa saja dengan animasi
+          progress dengan class yang kita tambahkan seperti loading-bar,
+          progress dan lainnya. Untuk mengubah gambar kita bisa ambil di
+          font-awesome
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+            <h4 class="center mb-4">Keahlian</h4>
+                  <div style="height: 42vh">
+                    <div class="biodata d-flex">
+                      <h4>
+                        <i class="fa-solid fa-globe me-3 fa-2"></i> Web Design
+                      </h4>
+                    </div>
+                    <div class="loading-bar">
+                      <div class="progress progress-1" id="progress"></div>
+                    </div>
+                    <div class="biodata d-flex">
+                      <h4>
+                        <i class="fa-brands fa-html5 me-3 fa-2"></i> Website
+                        Markup
+                      </h4>
+                    </div>
+                    <div class="loading-bar">
+                      <div class="progress progress-2" id="progress"></div>
+                    </div>
+                    <div class="biodata d-flex">
+                      <h4>
+                        <i class="fa-solid fa-images me-3 fa-2"></i> Photoshop
+                      </h4>
+                    </div>
+                    <div class="loading-bar">
+                      <div class="progress progress-3" id="progress"></div>
+                    </div>
+                    <div class="biodata d-flex">
+                      <h4>
+                        <i class="fa-solid fa-palette me-3 fa-2"></i> Canva
+                      </h4>
+                    </div>
+                    <div class="loading-bar">
+                      <div class="progress progress-4" id="progress"></div>
+                    </div>
+                  </div>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          7. Pada slide kedua kita buat keahlian kita apa saja dengan animasi
+          progress dengan class yang kita tambahkan seperti loading-bar,
+          progress dan lainnya. Untuk mengubah gambar kita bisa ambil di
+          font-awesome
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code" rows="12" class="form-control" readonly>
+            
+            .line {
+              width: 100%;
+              height: 2px;
+              border-radius: 10px;
+              background-color: rgba(213, 213, 213, 0.8);
+              margin-bottom: 20px;
+            }
+            .carousel-control-next {
+              color: black;
+            }
+            .carousel-control-next:hover {
+              color: black;
+            }
+            .carousel-control-prev {
+              color: black;
+            }
+            .carousel-control-prev:hover {
+              color: black;
+            }
+
+            .loading-bar {
+              width: 100%;
+              height: 5px;
+              background-color: #ddd;
+              position: relative;
+              margin-bottom: 20px;
+            }
+
+            .progress {
+              width: 0;
+              height: 100%;
+              background-color: #3498db;
+              position: absolute;
+            }
+            .progress-1 {
+              animation: progress-1 4s linear infinite;
+            }
+            .progress-2 {
+              animation: progress-2 4s linear infinite;
+            }
+            .progress-3 {
+              animation: progress-3 4s linear infinite;
+            }
+            .progress-4 {
+              animation: progress-4 4s linear infinite;
+            }
+
+            
+            @keyframes progress-1 {
+              0% {
+                width: 0;
+                background-color: #ddd;
+              }
+              30% {
+                width: 80%;
+                background-color: #3498db;
+              }
+              100% {
+                width: 80%;
+                background-color: #ddd;
+              }
+            }
+            @keyframes progress-2 {
+              0% {
+                width: 0;
+                background-color: #ddd;
+              }
+              30% {
+                width: 90%;
+                background-color: #3498db;
+              }
+              100% {
+                width: 90%;
+                background-color: #ddd;
+              }
+            }
+            @keyframes progress-3 {
+              0% {
+                width: 0;
+                background-color: #ddd;
+              }
+              30% {
+                width: 70%;
+                background-color: #3498db;
+              }
+              100% {
+                width: 70%;
+                background-color: #ddd;
+              }
+            }
+            @keyframes progress-4 {
+              0% {
+                width: 0;
+                background-color: #ddd;
+              }
+              30% {
+                width: 65%;
+                background-color: #3498db;
+              }
+              100% {
+                width: 65%;
+                background-color: #ddd;
+              }
+            }
+        </textarea
+          >
+          <button class="btn btn-primary mt-3">Salin Text</button>
         </div>
       </div>
     </div>
-
-      <div class="mb-5 ms-3">
-        <p>
-          2. lalu Kita tambahkan baris dan kolom buat membungkus judul dan deskripsinya
-        </p>
-
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
-            
-            <div class="row">
-              <div class="col-12 text-center">
-                <div class="judul_halaman2">
-                  <h3 id="biodata">Biodata</h3>
-                </div>
-                <div class="des_halaman2_kiri">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Possimus <br />
-                    impedit incidunt eius, dolor ea veritatis!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </textarea>
-          <button>Salin Texs</button>
-        </div>
-      </div>
-      <div class="mb-5 ms-3">
-        <p>
-          3. lalu Kita tambahkan Isi dari Biodata tersebut 
-        </p>
-
-        <div class="d-flex flex-column" style="max-width: 700px">
-          <textarea id="html-code" rows="12" cols="80">
-            
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="gambar_halaman2">
-                  <img src="./assets/aku4.png" class="img-fluid" alt="" />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="subjudul_halaman2">
-                  <h4>My Bio</h4>
-                </div>
-                <div class="des_halaman2_kanan">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus, aliquid praesentium consectetur sequi, molestias
-                    quibusdam fugiat ea repudiandae eveniet, voluptatibus dolorum!
-                    Non animi quo velit?
-                  </p>
-                </div>
-                <div class="wrap_tabel">
-                  <div class="tabel1">
-                    <div class="tabel_name">
-                      <h5>Name</h5>
-                      <p>Davano Alif R</p>
-                    </div>
-                    <div class="tabel_email">
-                      <h5>Email</h5>
-                      <p>Davano@gmail.com</p>
-                    </div>
-                    <div class="tabel_phone">
-                      <h5>Nomor</h5>
-                      <p>089-616-915-841</p>
-                    </div>
-                  </div>
-                  <div class="tabel2">
-                    <div class="tabel_status">
-                      <h5>Status</h5>
-                      <p>Mahasiswa</p>
-                    </div>
-                    <div class="tabel_jeniskelamin">
-                      <h5>Jenis kelamin</h5>
-                      <p>Laki - Laki</p>
-                    </div>
-                    <div class="tabel_umur">
-                      <h5>Umur</h5>
-                      <p>19 Tahun</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </textarea>
-          <button>Salin Texs</button>
-        </div>
-      </div>
-    </div>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
