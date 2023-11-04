@@ -47,6 +47,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="footer.html">Footer</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://url1.io/s/V9Gqj"
+                >Asset</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -163,23 +168,57 @@
 
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
-          3. Buat kerangka bagian headernya mulai dari memberikan id, membuat
-          container dan mengisikan 1 baris 2 kolom di containernya
+          Berikan style css untuk elemne h1, a class navbar dan background dari
+          body website kita
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-8" rows="12" class="form-control" readonly>
+            * {
+              padding: 0px;
+              margin: 0px;
+            }
+            body {
+              background-color: rgba(213, 213, 213, 0.28);
+              overflow-x: hidden;
+            }
+            h1,
+            a {
+              font-family: "Poppins", sans-serif;
+            }
+            .navbar {
+              background-color: white !important;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              position: fixed;
+              width: 100% !important;
+              z-index: 12;
+            }
+            
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('8')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          3. Buat elemen headernya mulai dari memberikan id home, membuat class
+          container dan membuat 1 baris/row 2 kolom/col di containernya
         </h5>
 
         <div class="d-flex flex-column">
           <textarea id="html-code-3" rows="12" class="form-control" readonly>
-            <header class="container pb-5 pt-5" id="home">
-              <div class="container header">
+            <header class="container header pb-5 pt-5" id="home">
                 <div class="row d-flex" style="height: 80vh">
                   <div class="col-6 m-auto">
-                   
+                      <!-- Kolom pertama -->
                   </div>
                   <div class="col-6 m-auto d-flex justify-content-end">
-                   
+                      <!-- Kolom kedua -->
                    
                   </div>
-                </div>
               </div>
               <div class="down">
                 <i class="icon-down fa-solid fa-angles-down fa-2x"></i>
@@ -195,9 +234,9 @@
 
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
-          4. Tambahkan elemen-elemen yang di butuhkan di kolom pertama, perlu di
-          perhatikan kita menambahkan class change-color dan typing untuk
-          animasinya
+          4. Tambahkan elemen-elemen yang di butuhkan di kolom pertama seperti
+          h1, a dan icon, perlu di perhatikan kita menambahkan class
+          change-color dan typing untuk animasinya
         </h5>
 
         <div class="d-flex flex-column">
@@ -252,26 +291,7 @@
         <div class="d-flex flex-column">
           <textarea id="html-code-5" rows="12" class="form-control" readonly>
           
-            * {
-              padding: 0px;
-              margin: 0px;
-            }
-            body {
-              background-color: rgba(213, 213, 213, 0.28);
-              overflow-x: hidden;
-            }
-            h1,
-            a {
-              font-family: "Poppins", sans-serif;
-            }
-            .navbar {
-              background-color: white !important;
-              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-              position: fixed;
-              width: 100% !important;
-              z-index: 12;
-            }
-            
+           
             .button-contact {
               background-color: #3e6ff4;
               color: white;
@@ -301,7 +321,7 @@
               white-space: nowrap;
               overflow: hidden;
               /* margin: 0 auto; */
-              animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+              animation: typing 3s steps(40) infinite;
             }
 
             
@@ -334,15 +354,6 @@
               }
             }
 
-            @keyframes blink-caret {
-              from,
-              to {
-                border-color: transparent;
-              }
-              50% {
-                border-color: #000;
-              }
-            }
             
             @keyframes moveUpDown {
               0%,
@@ -366,10 +377,7 @@
           6. Sekarang kita tambahkan elemen-elemen di kolom ke 2 yaitu gambar
           kotak, svg berwarna dan foto kalian (usahakan 400 x 458 px). Asset
           kotak download
-          <a
-            href="https://drive.google.com/file/d/1pODTfZA1ZUcDp_MJR7Yzu1SP_z5Y4e8s/view?usp=drive_link"
-            >disini</a
-          >
+          <a href="https://url1.io/s/V9Gqj">disini</a>
         </h5>
 
         <div class="d-flex flex-column">
