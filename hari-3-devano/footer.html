@@ -92,7 +92,7 @@
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
           2. Seperti biasa kita buat elemen footer untuk membungkus, lalu di
-          dalmanya tambahkan container yang berisi 1 baris dan 3 kolom
+          dalamnya tambahkan container yang berisi 1 baris dan 3 kolom
         </h5>
 
         <div class="d-flex flex-column">
@@ -100,14 +100,15 @@
             <footer class="footer mt-5 container-fluid d-flex justify-content-center">
                 <div class="container">
                   <div class="row">
+                    <!-- baris 1 -->
                     <div class="col-md-4 pt-4 d-flex justify-content-center">
-                     
+                     <!-- kolom 1 -->
                     </div>
                     <div class="col-md-4 pt-4 d-flex justify-content-center">
-                     
+                     <!-- kolom 2 -->
                     </div>
                     <div class="col-md-4 pt-4 d-flex justify-content-center">
-                      
+                      <!-- kolom 3 -->
                     </div>
                   </div>
                   <div class="center mt-5"><p>devanorama@gmail.com</p></div>
@@ -183,7 +184,47 @@
 
       <div class="mt-4 mb-5">
         <h5 class="pb-2">
-          6. Terakhir untuk responsif di layar lebar maupun layar hp kita
+          6. Tambahkan style untuk setiap elemen dan class yang sudah kita buat
+          di dalam footer
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-6" rows="12" class="form-control" readonly>
+/* footer */
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #3e6ff4;
+  color: white;
+}
+.footer-row {
+  width: 100%;
+  height: 250px;
+  background-color: #3e6ff4;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.footer-card {
+  padding-top: 20px;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
+              
+            </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('6')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          7. Terakhir untuk responsif di layar lebar maupun layar hp kita
           tambahkan media query di dalam css bawah sendiri seperti berikut
         </h5>
 
