@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modul Web 1</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+</head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">MODUL WEB 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Hero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pdf.html"><b>PDF</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://tinyurl.com/assetsweb1"
+                >Assets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Bagian PDF</h4>
+      <img
+        src="./img/pdf.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Buat section baru dengan class <b>"pdf"</b> dan beri id berupa <b>"#pdf"</b>. Lalu tambahkan div dengan class <b>"container"</b> di dalamnya.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
+            <section class="pdf" id="pdf">
+              <div class="container">
+      
+              </div>
+            </section>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+            Di dalam container tadi tambahkan h3 dengan class <b>"section-title"</b> untuk membuat judul section. Selanjutnya tambahkan tag p dengan class <b>"section-desc"</b> untuk menambahkan deskripsi singkat mengenai section ini. 
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
+              <h3 class="section-title">Document</h3>
+              <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Kemudian, tambahkan div baru dengan class <b>"card"</b> dan berikan style berupa <b>"text-align: center;"</b>. 
+          Di dalam div tadi tambahkan sebuat object dengan data berupa dokumen (.pdf) yang bisa diunduh <a href="https://tinyurl.com/assetsweb1">disini</a>.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
+              <div style="text-align: center;" class="card">
+                  <object data="/doc.pdf" width="1100" height="500"></object>
+              </div>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Terakhir, tambahkan style CSS untuk section ini.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
+            .pdf{
+                margin: 50px 0px;
+            }
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/clipboard.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

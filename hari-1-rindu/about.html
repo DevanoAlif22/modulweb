@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modul Web 1</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+</head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">MODUL WEB 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Hero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pdf.html">PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://tinyurl.com/assetsweb1"
+                >Assets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Bagian Biodata</h4>
+      <img
+        src="./img/about.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Buat section baru dengan class <b>"bio"</b> dan beri id berupa <b>"#bio"</b>. Lalu tambahkan div dengan class <b>"container"</b>. Tambahkan tag h3 dengan class <b>"section-title"</b>. Tambahkan tag p dengan class <b>"section-desc"</b> untuk membuat deskripsi singkat. Dan tambahkan tag table.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
+            <section class="bio" id="bio">
+              <div class="container">
+                  <h3 class="section-title">Biodata</h3>
+                  <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <table>
+      
+                  </table>
+              </div>
+            </section>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Di dalam tag table, tambahkan tag tr. Di dalam tr, tambahkan dua tag th dengan class <b>"bioimage"</b> dan <b>"biodata"</b>. Pada bioimage tambahkan sebuah img dengan class <b>"profile"</b>. Unduh foto profil <a href="https://tinyurl.com/assetsweb1"><u>disini</u></a> dan pindahkan ke folder <b>"images"</b>. 
+          Atau kunjungi <a href="https://unsplash.com">unsplash.com</a> dan pilih foto profil sesuai keinginanmu. Pada biodata, beri style berupa <b>"width: 50%;"</b>. 
+
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
+            <tr>
+              <th class="bioimage">
+                <img class="profile" src="/images/profil.jpg" alt="profil">
+              </th>
+              <th class="biodata" style="width: 50%;">
+
+              </th>
+            </tr>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Di dalam biotable, buat 6 buah baris dengan menambahkan tag tr. Di masing-masing baris, tambahkan dua kolom dengan menggunakan tag th. Pada kolom-kolom milik baris genap (baris ke-2, ke-4, dan ke-6) beri class berupa <b>"tableitem"</b>. Dan pada dua kolom pada baris terakhir, berikan style berupa <b>"padding-bottom: 0px;"</b>
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                  </tr>
+                  <tr>
+                    <th class="tableitem">Nama Kamu</th>
+                    <th class="tableitem">Umur Kami</th>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>Gender</td>
+                  </tr>
+                  <tr>
+                    <td class="tableitem">Email Kamu</td>
+                    <td class="tableitem">Male / Female</td>
+                  </tr>
+                  <tr>
+                    <td>Number</td>
+                    <td>Status</td>
+                  </tr>
+                  <tr>
+                    <td class="tableitem" style="padding-bottom: 0px;">Nomor Telepon Kamu</td>
+                    <td class="tableitem" style="padding-bottom: 0px;">Status Kamu</td>
+                  </tr>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Saatnya mempercantik tampilan biodata kita.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
+            .section-subtitle{
+              color: #ffff;
+              font-size: 22px;
+              text-align: left;
+            }
+            .section-desc{
+                color: #ffff;
+                font-size: 18px;
+                margin: 0px;
+                padding: 0px 330px 50px 330px;
+                text-align:center;
+            }
+            .bio span{
+                color: #ffff;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: left;
+            }
+            .bio th{
+                color: #ffff;
+                font-size: 16px;
+                text-align: left;
+            }
+            .bio .biodata{
+                padding-left: 75px;
+            }
+            .bio .biotable{
+                border: solid white;
+                border-width: 1px;
+                margin-top: 40px ;
+                padding: 30px 50px;
+                width: 100%;
+            }
+            .bio .bioimage{
+                width: 50%;
+            }
+            .bio .profile{
+                width: 90%; 
+                border: solid 2px #b0dbf1; 
+                border-radius: 100%;
+            }
+            .bio .tableitem{
+                color: #b0dbf1; 
+                font-weight: 400;
+                padding-bottom:30px;
+            }
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/clipboard.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

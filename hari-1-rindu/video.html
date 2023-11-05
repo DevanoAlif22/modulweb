@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modul Web 1</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+</head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">MODUL WEB 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Hero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html"><b>Video</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pdf.html">PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://tinyurl.com/assetsweb1"
+                >Assets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Bagian Video Gallery</h4>
+      <img
+        src="./img/video.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Buat section baru dengan class <b>"video"</b> dan beri id berupa <b>"#video"</b>. Lalu tambahkan div dengan class <b>"container"</b>. Tambahkan tag h3 dengan class <b>"section-title"</b>. Tambahkan tag p dengan class <b>"section-desc"</b> untuk membuat deskripsi singkat. Dan tambahkan dua div dengan style seperti pada contoh.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
+            <section class="video" id="video">
+              <div class="container">
+                  <h3 class="section-title">Video</h3>
+                  <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  
+                  <!-- DIV (BARIS) PERTAMA -->
+                  <div style="display: flex;"></div>
+                  
+                  <!-- DIV (BARIS) KEDUA -->
+                  <div style="display: flex; margin-top: 20px;"></div>
+              </div>
+            </section>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Di dalam div yang pertama, tambahkan tag table dengan class <b>"card"</b> yang memiliki satu baris dengan dua kolom.
+          <br>- Pada kolom pertama, tambahkan iframe dengan lebar 280 dan source berupa link video yang ingin ditampilkan. Sebagai contoh, silakan embed salah satu video dari YouTube.
+          <br>- Pada kolom kedua, berikan class berupa <b>"right-col"</b> dan tambahkan tag h4 dengan class <b>"card-title"</b> untuk menuliskan judul video. Lalu tambahkan paragraf untuk menuliskan deskripsi video tadi dan sebuah button untuk mengunjungi video tersebut.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
+                <table class="card">
+                    <tr>
+                        <td><iframe width="280" src="https://www.youtube.com/embed/JrOrlhjIYVk?si=pWdrf1R3zEedCALh"></iframe></td>
+                        <td class="right-col">
+                            <h4 class="card-title">Beautiful Goodbye</h1>
+                            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><button class="card-button">More</button></a>
+                        </td>
+                    </tr>
+                </table>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Masih pada div pertama, silakan menyalin table sebelumnya dan tempel di bawah tabel pertama.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
+                <table class="card">
+                    <tr>
+                        <td><iframe width="280" src="https://www.youtube.com/embed/n9ta1Pgeu80?si=sEUnpeT43rAEfbVE"></iframe></td>
+                        <td class="right-col">
+                            <h4 class="card-title">To You</h1>
+                            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><button class="card-button">More</button></a>
+                        </td>
+                    </tr>
+                </table>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Selanjutnya, salin kedua tabel pada div pertama dan tempelkan di dalam div kedua.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
+                <table class="card">
+                    <tr>
+                        <td><iframe width="280" src="https://www.youtube.com/embed/u4iDL3c0T1c?si=Do9G1P2uUnN8eVe_"></iframe></td>
+                        <td class="right-col">
+                            <h4 class="card-title">Falling Flower</h1>
+                            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><button class="card-button">More</button></a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="card">
+                    <tr>
+                        <td><iframe width="280" src="https://www.youtube.com/embed/Wb2MKdcGcaQ?si=MK4sRP3dpseqLl5n"></iframe></td>
+                        <td class="right-col">
+                            <h4 class="card-title">Flower</h1>
+                            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><button class="card-button">More</button></a>
+                        </td>
+                    </tr>
+                </table>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Saatnya memberi style untuk tampilan video gallery kita.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-5" rows="12" class="form-control" readonly>
+            .video .right-col{
+                width: 50%;
+                padding-left: 15px;
+            }
+            .video .card-title{
+                margin: 0px 0px -10px;
+            }
+            .card-button{
+                color: #b0dbf1;
+                background: #000137; 
+                border:solid 1px #b0dbf1;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight:600;
+                padding: 10px 30px;
+            }
+            .card-button:hover{
+                opacity: 0.7;
+                transform: scale(1.2);
+                transition: transform .3s;
+            }
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('5')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/clipboard.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

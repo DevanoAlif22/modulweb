@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modul Web 1</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+</head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">MODUL WEB 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Hero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html"><b>Gallery</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pdf.html">PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="footer.html">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://tinyurl.com/assetsweb1"
+                >Assets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h4 class="mb-4">Membuat Bagian Photo Gallery</h4>
+      <img
+        src="./img/gallery.png"
+        class="img-fluid"
+        alt="Gallery Image"
+        style="max-width: 100%"
+      />
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Buat section baru dengan class <b>"galery"</b> dan beri id berupa <b>"#gallery"</b>. Lalu tambahkan div dengan class <b>"container"</b>. Tambahkan tag h3 dengan class <b>"section-title"</b>. Tambahkan tag p dengan class <b>"section-desc"</b> untuk membuat deskripsi singkat. Dan tambahkan dua div dengan style seperti pada contoh.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-1" rows="12" class="form-control" readonly>
+            <section class="galery" id="gallery">
+              <div class="container">
+                  <h3 class="section-title">Gallery</h3>
+                  <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  
+                  <!-- DIV (BARIS) PERTAMA -->
+                  <div style="display: flex;"></div>
+                  
+                  <!-- DIV (BARIS) KEDUA -->
+                  <div style="display: flex; margin-top: 20px;"></div>
+              </div>
+            </section>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('1')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Di dalam div yang pertama, tambahkan tag table dengan class <b>"card"</b> yang memiliki tiga baris yang memiliki satu kolom.
+          <br>- Pada baris pertama, tambahkan img dengan class <b>"card-image"</b>. Unduh sebuah foto, masukkan ke folder image, dan panggil dengan menambahkan statement <b>"/images/<i>nama-file</i>"</b> pada bagian source image. Atau kalian juga bisa menggunakan foto secara online dengan menambahkan url seperti pada contoh.
+          <br>- Pada baris kedua, beri class <b>"right-col"</b> di kolomnya dan tambahkan tag h4 dengan class <b>"card-title"</b>.
+          <br>- Pada baris keiga, tambahkan span dengan class <b>"card-desc"</b> dan tuliskan deskripsi singkat tentang foto di ats.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-2" rows="12" class="form-control" readonly>
+                <table class="card">
+                  <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?computer" alt=""></td></tr>
+                  <tr><td class="right-col"><h4 class="card-title">Computer</h4></td></tr>
+                  <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+        </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('2')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Masih pada div pertama, silakan menyalin table sebelumnya dan tempel sebanyak 4 kali di bawah tabel pertama.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-3" rows="12" class="form-control" readonly>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?cat" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Cat</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?flower" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Flower</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?music" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Music</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('3')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Selanjutnya, salin keempat tabel pada div pertama dan tempelkan di dalam div kedua.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-4" rows="12" class="form-control" readonly>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?book" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Book</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?bed" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Bed</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?rain" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Rain</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+                <table class="card">
+                    <tr><td><img class="card-image" src="https://source.unsplash.com/300x200?sea" alt=""></td></tr>
+                    <tr><td class="right-col"><h4 class="card-title">Sea</h4></td></tr>
+                    <tr><td><span class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit facilis</span></td></tr>
+                </table>
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('4')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-5">
+        <h5 class="pb-2">
+          Saatnya memperindah tampilan galeri kita.
+        </h5>
+
+        <div class="d-flex flex-column">
+          <textarea id="html-code-5" rows="12" class="form-control" readonly>
+            .galery{
+                margin: 50px 0px 35px;
+            }
+            .card{
+                box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.329), 0 0px 10px 0 rgba(216, 216, 216, 0.589); 
+                border-radius: 15px; 
+                margin: 0px 15px 15px; 
+                padding: 15px;
+            }
+            .card-title{
+                color: #b0dbf1;
+                font-size: 22px;
+                margin: 20px 0px 5px;
+            }
+            .card-desc{
+                color: #ffff;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+            .card-image{
+                width: 100%; 
+                border-radius: 15px;
+            }
+
+          </textarea
+          >
+          <button class="btn btn-primary mt-3" onclick="copyText('5')">
+            Salin Text
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/clipboard.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
